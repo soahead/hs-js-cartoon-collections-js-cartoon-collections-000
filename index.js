@@ -13,30 +13,30 @@ function dwarfRollCall(dwarves) {
         str += `${i+1}. ${dwarves[i]} `  ;
       }
    }
-return str
+return str;
 }
 
 function summonCaptainPlanet(planeteerCalls){
       //create new array
    planeteerCalls = planeteerCalls.map(function(summonCaptainPlanet){ 
      //convert to uppercase and concatenate !
-     return summonCaptainPlanet.toUpperCase() + "!"
-   })
-  return planeteerCalls
+     return summonCaptainPlanet.toUpperCase() + "!";
+   });
+  return planeteerCalls;
 }
 
 function longPlaneteerCalls(words) {
   let str = "";
   for (let i = 0; i < words.length; i++){
-    //checks array members up to four characters 
-    if([i.length] < 5){
-      str = false
+    //checks for array members with up to four characters 
+    if(words[i].length <= 4){
+      str = false;
     }
     else {
-      str = true
+      str = true;
     }
   }
-  return str
+  return str;
 }
 
 function findTheCheese(foods) {
