@@ -17,10 +17,25 @@ return str
 }
 
 function summonCaptainPlanet(planeteerCalls){
+      //create new array
+   planeteerCalls = planeteerCalls.map(function(summonCaptainPlanet){ 
+     //convert to uppercase and concatenate !
+     return summonCaptainPlanet.toUpperCase() + "!"
+   })
+  return planeteerCalls
 }
 
 function longPlaneteerCalls(words) {
+  let str =""
+  for (let i = 0; i < words.length => 4; i++){
+    if(i < words.lenth){
+      str = 'false'
+    }
+    else {
+      str = 'true'
+    }
+  }
 }
 
-function findTheCheese (foods) {
+function findTheCheese(foods) {
 }
