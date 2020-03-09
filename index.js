@@ -40,18 +40,17 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese(foods) {
-  let str = "";
+  const cheeses = ['cheddar', 'gouda', 'camembert'];
+  //check array for matching string
   for (let i = 0; i < foods.length; i++){
-    //const pets = ['cat', 'dog', 'bat'];
-    //console.log(pets.includes('cat'));
-    const cheeses = ["cheddar", "gouda", "camembert"];
-    if(foods[i].includes(cheeses)){
-    str = [i];
+    //nested 2nd array loop for comparison
+    for (let j = 0; j < cheeses.length; j++){
+    if (foods[i] === cheeses[j]){
+      return foods[i]
+    }  
     }
-    else {
-      str = "no cheese!";
-    }
+    
   }
-  return str;
+  return "no cheese!"
 }
 
