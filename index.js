@@ -56,8 +56,10 @@ function findTheCheese(foods) {
 }
 
 function wordsWithB(words){
+  const bwords = []
   for (i = 0; i < words.length; i++){
-    let bword = words[i].startsWith("B")
+    if (words[i].startsWith("B"))
+    let elements = bwords[i]
     
   }  
 }
