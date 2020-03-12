@@ -40,8 +40,9 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese(foods) {
+  //create 2nd array
   const cheeses = ['cheddar', 'gouda', 'camembert'];
-  //check array for matching string
+  //looping array for matching string
   for (let i = 0; i < foods.length; i++){
     //nested 2nd array loop for comparison
     for (let j = 0; j < cheeses.length; j++){
